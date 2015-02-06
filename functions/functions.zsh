@@ -7,6 +7,11 @@ function cd() {
     builtin cd $* && ls;
 }
 
+# Brightness
+function bright () {
+    xrandr --output $(xrandr | grep ' connected' | cut -d ' ' -f1) --brightness $(echo $1)
+}
+
 #Get IP
 function ip-addr() {
     wget -qO- http://ipecho.net/plain
@@ -35,50 +40,12 @@ function incognito() {
     rm -f $TEMPFILE
 }
 
-# uncompress depending on extension...
-function extract() {
-    if [ -f $1 ] ; then
-        case $1 in
-            *.tar.bz2)
-                tar xvjf $1;;
-            *.tar.gz)
-                tar xvzf $1;;
-            *.bz2)
-                bunzip2 $1;;
-            *.rar)
-                unrar x $1;;
-            *.gz)
-                gunzip $1;;
-            *.tar)
-                tar xvf $1;;
-            *.tbz2)
-                tar xvjf $1;;
-            *.tgz)
-                tar xvzf $1;;
-            *.zip)
-                unzip $1;;
-            *.Z)
-                uncompress $1;;
-            *.7z)
-                7z x $1;;
-            *)
-                echo "'$1' cannot be extracted via >extract<";;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
-}
-
 
 # wifi
 hookme () {
     sudo ifdown wlan0;sudo ifup wlan0=$1;
 }
 
-# screen brightness script
-bright () {
-    sudo echo -n $1 > /sys/class/backlight/acpi_video0/brightness
-}
 
 install () {
     sudo aptitude install $1

@@ -34,6 +34,7 @@ alias ekblaptop='enable_device keyboard AT'
 
 alias gir='grep -Ir'
 
+# Python
 alias ipy='ipython'
 alias py='python'
 
