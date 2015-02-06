@@ -1,5 +1,3 @@
-
-
 alias ls='ls --color=always'
 alias ll='ls -lha'
 alias l='ls -lh'
@@ -12,7 +10,7 @@ alias mr='make re'
 alias ddext='sudo mount -t ntfs-3g /dev/sdb1 ~/DDext';
 
 # edit zshrc
-alias ezsh='emacs -nw ~/.zshrc;source ~/.zshrc';
+alias ezsh='emacs -nw ~/Projects/GitHub/zsh-files/aliases/aliases.zsh && antigen update && source ~/.zshrc';
 
 alias wchat='weechat-curses';
 alias ocaml='rlwrap ocaml';
