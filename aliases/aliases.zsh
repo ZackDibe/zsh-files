@@ -1,4 +1,5 @@
 
+
 alias ls='ls --color=always'
 alias ll='ls -lha'
 alias l='ls -lh'
@@ -34,6 +35,7 @@ alias ekblaptop='enable_device keyboard AT'
 alias gir='grep -Ir'
 
 alias ipy='ipython'
+alias py='python'
 
 # ......
 alias ..='cd ../'
