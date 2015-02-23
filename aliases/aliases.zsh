@@ -6,6 +6,9 @@ alias ne='emacs -nw'
 alias m='make'
 alias mr='make re'
 
+# Topcoder
+alias topcoder='javaws -Xignoreheaders -headless ~/.ContestAppletProd.jnlp&'
+
 # mount partitions
 alias ddext='sudo mount -t ntfs-3g /dev/sdb1 ~/DDext';
 
@@ -33,7 +36,7 @@ alias ekblaptop='enable_device keyboard AT'
 alias gir='grep -Ir'
 
 # Python
-alias ipy='ipython'
+alias ipy='ptipython'
 alias py='python'
 
 # ......
