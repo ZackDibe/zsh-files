@@ -28,7 +28,7 @@ alias mvdraft="mv Downloads/draft.cod Windows/Documents\ and\ Settings/Mawuena/A
 alias canop='sudo su - canopsis'
 
 # Enable double screen
-alias dscreen='xrandr --output LVDS-1 --mode 1920x1080 --pos 0x0 --output VGA-1 --mode 1920x1080 --pos 1920x0'
+alias dscreen='xrandr --output HDMI3 --mode 1920x1080 --pos 0x0 --output DP1 --mode 1920x1080 --pos 1920x0'
 
 alias dkblaptop='disable_device keyboard AT'
 alias ekblaptop='enable_device keyboard AT'
@@ -36,7 +36,7 @@ alias ekblaptop='enable_device keyboard AT'
 alias gir='grep -Ir'
 
 # Python
-alias ipy='ptipython'
+alias ipy='ipython'
 alias py='python'
 
 # ......
