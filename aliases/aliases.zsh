@@ -38,7 +38,7 @@ alias gir='grep -Ir'
 # Python
 alias ipy='ipython'
 alias py='python'
-alias ve='source env/bin/activate
+alias ve='source env/bin/activate'
 
 # ......
 alias ..='cd ../'
