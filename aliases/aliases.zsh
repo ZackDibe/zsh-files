@@ -38,6 +38,7 @@ alias gir='grep -Ir'
 # Python
 alias ipy='ipython'
 alias py='python'
+alias ve='source env/bin/activate
 
 # ......
 alias ..='cd ../'
@@ -76,3 +77,4 @@ alias -s gif=feh
 # Source Extensions
 alias -s hs=$EDITOR
 alias -s c=$EDITOR
+
