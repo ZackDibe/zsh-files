@@ -83,5 +83,5 @@ CRUNCH_PROMPT="$CRUNCH_BRACKET_COLOR➭ "
 
 # Put it all together!
 precmd() {
-PROMPT="${CL_GREEN}%(!.#.❆)%{$reset_color%} $CRUNCH_DIR_$(hirakata romaji mute) $CRUNCH_PROMPT%{$reset_color%}"
+PROMPT="${CL_GREEN}%(!.#.❆)%{$reset_color%} $CRUNCH_DIR_$(hirakata hangul romaji mute) $CRUNCH_PROMPT%{$reset_color%}"
 }
