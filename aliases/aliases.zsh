@@ -7,7 +7,7 @@ alias m='make'
 alias mr='make re'
 
 # Create a timestamp'd note in ~/Notes
-alias note='mkdir -p ~/Notes/$(date +%m-%d-%Y) && xterm -e "emacs -nw ~/Notes/$(date +%m-%d-%Y)/note_$(date +%m-%d-%Y_%H:%M:%S).md"'
+alias note='mkdir -p ~/Notes/$(date +%m-%d-%Y) && emacs -nw ~/Notes/$(date +%m-%d-%Y)/note_$(date +%m-%d-%Y_%H:%M:%S).md'
 
 # Topcoder
 alias topcoder='javaws -Xignoreheaders -headless ~/.ContestAppletProd.jnlp&'
