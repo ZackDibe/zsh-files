@@ -8,6 +8,10 @@ alias mr='make re'
 
 # Create a timestamp'd note in ~/Notes
 alias note='mkdir -p ~/Notes/$(date +%m-%d-%Y) && emacs -nw ~/Notes/$(date +%m-%d-%Y)/note_$(date +%m-%d-%Y_%H:%M:%S).md'
+# Consolidate all notes from the latest day into one
+alias cnote='cat $(ls -1 $(ls -1 -d ~/Notes/* --sort=time | head -n "1")/* | grep ".md$") > $(ls -1 -d ~/Notes/* --sort=time | head -n "1")/consolidated_notes.md'
+# Open last note of the latest day
+alias lnote='emacs -nw $(ls -1 -d $(ls -1 -d ~/Notes/* --sort=time | head -n "1")/* --sort=time | grep ".md$" | head -n "1")'
 
 # Topcoder
 alias topcoder='javaws -Xignoreheaders -headless ~/.ContestAppletProd.jnlp&'
